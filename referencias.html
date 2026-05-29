@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8" /><title>GGV | Referencias</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><style>
+
+:root{
+  --ink:#1c140b;
+  --volcanic:#17100a;
+  --lava:#8f2d12;
+  --gold:#c8912f;
+  --gold2:#f1c66b;
+  --ocean:#143f55;
+  --forest:#273d2e;
+  --sage:#72846a;
+  --cream:#f4ead8;
+  --paper:#fffaf0;
+  --muted:#6e5d48;
+  --line:rgba(28,20,11,.14);
+  --shadow:0 18px 55px rgba(23,16,10,.18);
+  --green:#075a52;
+  --teal:#0f766e;
+  --soft:#f4ead8;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 10% 0%,rgba(241,198,107,.22),transparent 32rem),
+    radial-gradient(circle at 90% 18%,rgba(20,63,85,.14),transparent 34rem),
+    linear-gradient(180deg,#fff7e8 0%,#efe1ca 100%);
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  opacity:.38;
+  background-image:
+    linear-gradient(rgba(28,20,11,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(28,20,11,.03) 1px,transparent 1px);
+  background-size:34px 34px;
+}
+nav{
+  position:sticky;top:0;z-index:40;height:66px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 28px;background:rgba(23,16,10,.94);
+  backdrop-filter:blur(14px);border-bottom:1px solid rgba(241,198,107,.32)
+}
+.brand{color:var(--paper);font-weight:900;display:flex;gap:10px;align-items:center;letter-spacing:.01em}
+.brand b{color:var(--gold2)}
+.navlinks{display:flex;gap:6px;overflow:auto;max-width:76vw}
+.navlinks a{
+  color:rgba(255,250,240,.74);text-decoration:none;font-size:12px;font-weight:800;
+  padding:9px 11px;border-radius:999px;white-space:nowrap
+}
+.navlinks a:hover,.navlinks a.active{background:rgba(241,198,107,.16);color:var(--gold2)}
+section{position:relative;z-index:1}
+.hero{
+  min-height:calc(100vh - 66px);
+  display:grid;grid-template-columns:1.08fr .92fr;
+  border-bottom:1px solid var(--line)
+}
+.heroText{padding:86px 7vw 64px;display:flex;flex-direction:column;justify-content:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--lava);font-weight:900}
+.kicker:before{content:"";width:42px;height:2px;background:var(--lava)}
+h1{font-family:"Playfair Display",serif;font-size:clamp(44px,7vw,84px);line-height:.96;margin:24px 0 22px;color:var(--volcanic)}
+h1 span{display:block;color:var(--lava)}
+.lead{font-size:20px;line-height:1.68;color:#4f3e2d;max-width:840px}
+.heroActions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 20px;border-radius:14px;text-decoration:none;
+  font-weight:900;border:1px solid transparent;cursor:pointer
+}
+.btn.primary{background:var(--volcanic);color:var(--gold2);box-shadow:var(--shadow)}
+.btn.secondary{background:rgba(255,250,240,.62);color:var(--volcanic);border-color:var(--line)}
+.btn.green{background:linear-gradient(135deg,var(--green),var(--ocean));color:#fff;border-color:rgba(255,250,240,.18)}
+.btn.gold{background:var(--gold);color:var(--volcanic)}
+.heroVisual{
+  min-height:610px;position:relative;overflow:hidden;
+  background:
+    linear-gradient(180deg,rgba(23,16,10,.1),rgba(23,16,10,.86)),
+    radial-gradient(circle at 38% 20%,rgba(241,198,107,.28),transparent 26rem),
+    linear-gradient(135deg,var(--forest),var(--ocean) 48%,var(--volcanic));
+  display:flex;align-items:flex-end;padding:44px
+}
+.heroVisual:before{
+  content:"";position:absolute;inset:44px;border:1px solid rgba(241,198,107,.24);border-radius:30px
+}
+.gridLines{
+  position:absolute;inset:0;opacity:.24;
+  background:
+    repeating-radial-gradient(circle at 55% 54%,transparent 0 26px,rgba(241,198,107,.55) 27px 28px),
+    linear-gradient(35deg,transparent 0 49%,rgba(241,198,107,.5) 50%,transparent 51%)
+}
+.visualCard{
+  position:relative;z-index:3;padding:30px;border-radius:26px;
+  background:rgba(255,250,240,.1);border:1px solid rgba(255,250,240,.22);
+  backdrop-filter:blur(8px);color:var(--paper)
+}
+.visualCard h3{margin:0 0 12px;color:var(--gold2);font-family:"Playfair Display",serif;font-size:32px}
+.visualCard p{margin:0;color:rgba(255,250,240,.82);line-height:1.72}
+.wrap{max-width:1200px;margin:0 auto;padding:78px 28px}
+.center{text-align:center}
+.eyebrow{color:var(--lava);font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+h2{font-family:"Playfair Display",serif;color:var(--volcanic);font-size:clamp(32px,4.3vw,56px);line-height:1.05;margin:0 0 18px}
+.sub{max-width:900px;margin:0 auto 38px;color:#5d4a36;font-size:18px;line-height:1.72}
+.grid{display:grid;gap:18px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{
+  background:rgba(255,250,240,.78);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:24px;
+  box-shadow:0 10px 35px rgba(23,16,10,.065)
+}
+.card.dark{background:var(--volcanic);color:var(--paper);border-color:rgba(241,198,107,.32)}
+.card.green{background:linear-gradient(135deg,#063f3a,#143f55);color:#fff;border-color:rgba(241,198,107,.32)}
+.card h3{margin:0 0 12px;font-family:"Playfair Display",serif;font-size:25px;color:var(--volcanic)}
+.card.dark h3,.card.green h3{color:var(--gold2)}
+.card p,.card li{color:#5e4b36;font-size:15px;line-height:1.68}
+.card.dark p,.card.dark li,.card.green p,.card.green li{color:rgba(255,250,240,.84)}
+.icon{width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:rgba(201,145,47,.15);font-size:24px;margin-bottom:16px}
+.band{
+  background:linear-gradient(135deg,var(--volcanic),#2b1b0f 44%,var(--ocean));
+  color:var(--paper);border-radius:32px;padding:40px;margin:38px 0;
+  box-shadow:var(--shadow);border:1px solid rgba(241,198,107,.25)
+}
+.band h2,.band h3{color:var(--gold2)}
+.band p{color:rgba(255,250,240,.84);line-height:1.72}
+.band.light{
+  background:linear-gradient(135deg,#fffaf0,#fff4dc);
+  color:var(--ink);border-color:var(--line);box-shadow:0 12px 35px rgba(23,16,10,.08)
+}
+.band.light h2,.band.light h3{color:var(--volcanic)}
+.band.light p{color:#5d4a36}
+.steps{counter-reset:item;display:grid;gap:14px}
+.step{
+  counter-increment:item;display:grid;grid-template-columns:76px 1fr;gap:18px;align-items:start;
+  padding:22px;border-radius:24px;background:rgba(255,250,240,.78);border:1px solid var(--line)
+}
+.step:before{
+  content:"0" counter(item);width:58px;height:58px;border-radius:18px;
+  display:flex;align-items:center;justify-content:center;background:var(--volcanic);
+  color:var(--gold2);font-family:"Playfair Display",serif;font-weight:800;font-size:25px
+}
+.step h3{margin:0 0 6px;font-size:20px}
+.step p{margin:0;color:#5d4a36;line-height:1.65}
+table{
+  width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:18px;
+  border:1px solid var(--line);background:rgba(255,250,240,.76)
+}
+th,td{padding:15px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px;line-height:1.52}
+th{background:rgba(23,16,10,.94);color:var(--gold2);font-weight:900}
+tr:last-child td{border-bottom:0}
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.checks li{position:relative;padding-left:30px}
+.checks li:before{content:"✓";position:absolute;left:0;top:0;color:var(--gold);font-weight:900}
+.tag{display:inline-flex;padding:7px 12px;border-radius:999px;background:rgba(201,145,47,.14);color:#70400e;font-size:12px;font-weight:900;margin:5px 5px 0 0}
+.price{display:grid;grid-template-columns:1fr .7fr;gap:18px;align-items:stretch}
+.priceBox{background:var(--volcanic);color:var(--paper);border-radius:28px;padding:32px;box-shadow:var(--shadow)}
+.amount{font-size:52px;font-weight:900;color:var(--gold2);letter-spacing:-.04em}
+.note{color:rgba(255,250,240,.76);line-height:1.62}
+.warning{border-left:5px solid var(--gold);padding:18px 20px;background:rgba(201,145,47,.12);border-radius:0 18px 18px 0;line-height:1.65;color:#4f3e2d}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}
+.flow .mini{background:rgba(255,250,240,.78);border:1px solid var(--line);border-radius:20px;padding:18px;min-height:132px}
+.flow .mini b{color:var(--lava)}
+.linkgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.linkcard{
+  display:block;text-decoration:none;background:rgba(255,250,240,.8);border:1px solid var(--line);border-radius:20px;padding:18px;color:var(--ink);
+  transition:.2s ease
+}
+.linkcard:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(23,16,10,.12)}
+.linkcard b{display:block;color:var(--lava);margin-bottom:6px}
+.footer{background:var(--volcanic);color:rgba(255,250,240,.75);text-align:center;padding:34px 28px}
+.footer b{color:var(--gold2)}
+.small{font-size:12px;color:var(--muted);line-height:1.6}
+.placeholder{color:#8f2d12;font-weight:900}
+pre{white-space:pre-wrap;font-family:Consolas,monospace;line-height:1.55;background:rgba(255,250,240,.8);border:1px solid var(--line);border-radius:18px;padding:18px}
+@media(max-width:900px){
+  .hero,.g2,.g3,.g4,.price,.flow,.linkgrid{grid-template-columns:1fr}
+  .heroVisual{min-height:380px}.navlinks{display:none}.step{grid-template-columns:1fr}
+}
+
+</style></head>
+<body>
+<nav><div class="brand">🌋 <span>Galápagos</span> <b>Geología Viva</b></div><div class="navlinks"><a href="index.html">Inicio</a></div></nav>
+<section class="wrap">
+<div class="band light"><div class="eyebrow">Base técnica</div><h2>Referencias normativas y metodológicas</h2><p>Bibliografía base para sostener riesgos, seguridad turística y rutas geoturísticas.</p></div>
+<ul class="checks">
+<li>Ley Orgánica para la Gestión Integral del Riesgo de Desastres.</li>
+<li>Reglamento General a la Ley Orgánica para la Gestión Integral del Riesgo de Desastres.</li>
+<li>Reglamento de Operación Turística de Aventura del Ecuador.</li>
+<li>Reglamento Especial de Turismo en Áreas Naturales Protegidas.</li>
+<li>Norma Ecuatoriana de la Construcción NEC-SE-GC: Geotecnia y Cimentaciones.</li>
+<li>ISO 31000:2018 Risk management — Guidelines.</li>
+<li>ISO 45001:2018 Occupational health and safety management systems.</li>
+<li>ISO 21101:2014 Adventure tourism — Safety management systems.</li>
+<li>ISO 21103:2014 Adventure tourism — Information for participants.</li>
+<li>Ley Orgánica de Régimen Especial de la Provincia de Galápagos.</li>
+</ul>
+</section>
+</body></html>
